@@ -4,10 +4,10 @@
 
 void Application::onRun()
 {
-    auto foo = std::make_shared<Foo>();
+    auto obj = std::make_shared<Foo>();
     
-    connect(this, &Application::callFoo, foo.get(), &Foo::doSomethingFoo);
-    connect(foo.get(), &Foo::callFrom, this, &Application::onLibCalls);
+    connect(this, &Application::callFoo, obj.get(), &Foo::doSomethingFoo);
+    connect(obj.get(), &Foo::callFrom, this, &Application::onLibCalls);
 
     emit callFoo();
 

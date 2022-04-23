@@ -32,6 +32,8 @@ QT_ADD_LIBRARY(
 
 QT_ADD_EXECUTABLE(
     Programm
+    source/Exe/Bar.h
+    source/Exe/Bar.cpp
     source/Exe/Application.h
     source/Exe/Application.cpp
     source/Exe/main.cpp
