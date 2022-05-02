@@ -20,12 +20,8 @@ FIND_PACKAGE(Qt6 REQUIRED COMPONENTS Core)
 QT_STANDARD_PROJECT_SETUP()
 
 QT_ADD_LIBRARY(
-    Global INTERFACE
-    source/Global/global.h
-)
-
-QT_ADD_LIBRARY(
     LibA SHARED
+    source/LibA/export.h
     source/LibA/Foo.h
     source/LibA/Foo.cpp
 )

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Global/global.h"
+#include "LibA/export.h"
 
 #include <QtCore/QObject>
 
